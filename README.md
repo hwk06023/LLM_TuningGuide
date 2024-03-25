@@ -62,44 +62,21 @@ If you find any incorrect information or have additional details to add, You can
 
 ## Prompt Engineering
 
+### Steps
+
 You can improve the performance of your model by following the step below. <br/>
 
 **"Instructions > Context > Persona > Examples > Starter Words"** <br/>
 
-### Instructions
+You can see the detailed information about the steps **[here](./PromptEngineering.md/)**.  <br/>
 
-Instructions clearly communicate the nature and requirements of the task to be performed by the model, providing direction and purpose for the generated output. <br/>
+### Prompt Method
 
-Purpose: Defines the task the model is expected to perform. <br/>
-Example: "Summarize the following sentence:", "Write an appropriate response to this email:"
+<img src="./Img_md/ReAct_CoT_SC.png" width=300> <br/>
+Image from the paper is named 'REACT: SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS'
 
-### Context
+You can see the detailed information about the prompt methods **[here](./PromptEngineering.md/)**.  <br/>
 
-Context provides the model with background information or circumstances needed to perform the task. It helps the model generate outputs that are relevant and accurate based on the given information. <br/>
-
-Purpose: Sets the background information and circumstances for the task. <br/>
-Example: "In response to a customer complaint, considering our company’s policy..."
-
-### Persona
-
-Persona guides the model to adopt a specific character or role when generating responses. This helps maintain a consistent tone and style in the model's outputs. <br/>
-
-Purpose: Specifies the tone and style of the response. <br/>
-Example: "As a friendly customer service representative...", "From the perspective of an experienced developer..." <br/>
-
-### Examples
-
-Examples show the model concrete instances of how a particular task should be performed. This is particularly useful in few-shot or zero-shot learning scenarios. <br/>
-
-Purpose: Demonstrates to the model what the expected outcome of the task looks like. <br/>
-Example: Providing problem and solution formats, multiple approaches to a task
-
-### Starter Words
-
-Starter Words offer words or phrases the model can use to begin generating responses. This provides an initial direction for creating the output. <br/>
-
-Purpose: Provides a starting point for response generation. <br/>
-Example: "Answer:", "In conclusion..." 
 
 <br/>
 
@@ -114,12 +91,15 @@ Example: "Answer:", "In conclusion..."
 
 ## PEFT (Parameter-Efficient Fine-Tuning)
 
-### Prefix Tuning
+### [Prefix Tuning](https://arxiv.org/abs/2106.04561)
 
-- [Prefix-Tuning](https://arxiv.org/abs/2106.04561) : Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-trained models to downstream tasks with a few task-specific parameters. <br/>
+Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-trained models to downstream tasks with a few task-specific parameters. <br/>
 
-### Adapter
+### Adapter 
 
+[Adapter(Parameter-Efficient Transfer Learning for NLP)](https://arxiv.org/pdf/1902.00751v2.pdf) <br/>
+
+This paper discusses the inefficiency of fine-tuning large pre-trained models for multiple downstream tasks due to the requirement of training a new model for each task. The authors propose using adapter modules for transfer learning, which add only a few trainable parameters per task, allowing for a more parameter-efficient transfer while maintaining near state-of-the-art performance across 26 diverse text classification tasks. This method significantly reduces the additional parameters needed per task, showcasing an innovative approach to making transfer learning more efficient and scalable
 
 ### LoRA (Low-Rank Adaptation)
 
