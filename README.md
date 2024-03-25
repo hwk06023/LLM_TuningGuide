@@ -91,15 +91,15 @@ You can see the detailed information about the prompt methods **[here](./PromptE
 
 ## PEFT (Parameter-Efficient Fine-Tuning)
 
-### [Prefix Tuning](https://arxiv.org/abs/2106.04561)
-
-Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-trained models to downstream tasks with a few task-specific parameters. <br/>
-
 ### Adapter 
 
 [Adapter(Parameter-Efficient Transfer Learning for NLP)](https://arxiv.org/pdf/1902.00751v2.pdf) <br/>
 
 This paper discusses the inefficiency of fine-tuning large pre-trained models for multiple downstream tasks due to the requirement of training a new model for each task. The authors propose using adapter modules for transfer learning, which add only a few trainable parameters per task, allowing for a more parameter-efficient transfer while maintaining near state-of-the-art performance across 26 diverse text classification tasks. This method significantly reduces the additional parameters needed per task, showcasing an innovative approach to making transfer learning more efficient and scalable
+
+### [Prefix Tuning](https://arxiv.org/abs/2106.04561)
+
+Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-trained models to downstream tasks with a few task-specific parameters. <br/>
 
 ### LoRA (Low-Rank Adaptation)
 
@@ -112,3 +112,10 @@ This paper discusses the inefficiency of fine-tuning large pre-trained models fo
 
 
 
+## Evaluation
+### Metric
+* Perplexity
+### Benchmarks
+* GLUE / SuperGLUE
+* MMLU
+* BIG-Bench
