@@ -147,6 +147,7 @@ Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-t
 
 ### Tips
 
+A recent impactful paper on hybrid retrieval approaches is "On Complementarity Objectives for Hybrid Retrieval." This paper addresses one of the key challenges in hybrid retrieval, which combines the strengths of sparse retrieval and dense retrieval: making sparse and dense complementary to each other. Existing models have focused on enabling dense models to capture "residual" features that sparse models miss. The paper demonstrates how this concept of residual complementarity is limited and proposes a new objective called RoC (Ratio of Complementarity) to capture a more complete notion of complementarity. It introduces a two-level orthogonality approach to improve RoC and shows that the enhanced RoC of their model, in turn, improves hybrid retrieval performance. The method outperforms all state-of-the-art methods on three representative IR benchmarks: MSMARCO-Passage, Natural Questions, and TREC Robust04, with statistical significance (Lee et al., 2023).
 
 
 
