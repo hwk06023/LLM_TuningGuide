@@ -143,11 +143,19 @@ Prefix-Tuning is a new fine-tuning method that can effectively adapt large pre-t
 
 ## RAG (Retrieval-Augmented Generation)
 
+### Sparse Retrieval
+
+Sparse retrieval is a technique used in information retrieval to identify relevant documents from a large collection based on a query. It involves selecting a subset of documents that are likely to contain the information needed to answer the query, reducing the computational cost of processing the entire collection. Sparse retrieval methods typically use inverted indexes or other data structures to quickly identify relevant documents based on keywords or other features. This approach is commonly used in search engines and other information retrieval systems to quickly retrieve relevant information from large document collections.
+
+### Dense Retrieval
+
+Dense retrieval is a technique used in information retrieval to identify relevant documents from a large collection based on a query. It involves encoding documents and queries into dense vector representations using neural networks or other machine learning models. These dense representations capture semantic similarities between documents and queries, enabling more accurate retrieval of relevant information. Dense retrieval methods are particularly effective for capturing complex relationships between documents and queries that may not be captured by traditional sparse retrieval methods. This approach is commonly used in modern information retrieval systems to improve the quality of search results.
+
 <br/>
 
 ### Tips
 
-A recent impactful paper on hybrid retrieval approaches is "On Complementarity Objectives for Hybrid Retrieval." This paper addresses one of the key challenges in hybrid retrieval, which combines the strengths of sparse retrieval and dense retrieval: making sparse and dense complementary to each other. Existing models have focused on enabling dense models to capture "residual" features that sparse models miss. The paper demonstrates how this concept of residual complementarity is limited and proposes a new objective called RoC (Ratio of Complementarity) to capture a more complete notion of complementarity. It introduces a two-level orthogonality approach to improve RoC and shows that the enhanced RoC of their model, in turn, improves hybrid retrieval performance. The method outperforms all state-of-the-art methods on three representative IR benchmarks: MSMARCO-Passage, Natural Questions, and TREC Robust04, with statistical significance (Lee et al., 2023).
+A recent impactful paper on hybrid retrieval approaches is "On Complementarity Objectives for Hybrid Retrieval." This paper addresses one of the key challenges in hybrid retrieval, which combines the strengths of sparse retrieval and dense retrieval: making sparse and dense complementary to each other. Existing models have focused on enabling dense models to capture "residual" features that sparse models miss. The paper demonstrates how this concept of residual complementarity is limited and proposes a new objective called RoC (Ratio of Complementarity) to capture a more complete notion of complementarity. It introduces a two-level orthogonality approach to improve RoC and shows that the enhanced RoC of their model, in turn, improves hybrid retrieval performance. The method outperforms all state-of-the-art methods on three representative IR benchmarks: MSMARCO-Passage, Natural Questions, and TREC Robust04, with statistical significance.
 
 
 
