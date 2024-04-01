@@ -151,6 +151,10 @@ Sparse retrieval is a technique used in information retrieval to identify releva
 
 Dense retrieval is a technique used in information retrieval to identify relevant documents from a large collection based on a query. It involves encoding documents and queries into dense vector representations using neural networks or other machine learning models. These dense representations capture semantic similarities between documents and queries, enabling more accurate retrieval of relevant information. Dense retrieval methods are particularly effective for capturing complex relationships between documents and queries that may not be captured by traditional sparse retrieval methods. This approach is commonly used in modern information retrieval systems to improve the quality of search results.
 
+### Hybrid Retrieval (ensemble)
+
+Hybrid retrieval combines the strengths of sparse retrieval and dense retrieval to improve the performance of information retrieval systems. By using both sparse and dense representations of documents and queries, hybrid retrieval methods can leverage the complementary strengths of each approach to achieve better retrieval performance. For example, sparse retrieval methods are efficient for quickly identifying relevant documents based on keywords, while dense retrieval methods can capture more complex semantic relationships between documents and queries. By combining these two approaches, hybrid retrieval methods can achieve higher accuracy and efficiency in retrieving relevant information from large document collections.
+
 <br/>
 
 ### Tips
