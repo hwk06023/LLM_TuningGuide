@@ -7,21 +7,13 @@ If you find any incorrect information or have additional details to add, You can
 
 ### Models
 
-#### Only Research
-
 - [LLaMA](https://github.com/meta-llama/llama)
 
 - [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama)
 
 - [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
 
-- [Baize](https://github.com/project-baize/baize-chatbot)
-
 - [Dalai](https://github.com/cocktailpeanut/dalai)
-
-..
-
-#### Commercial
 
 - [Flan-UL2](https://github.com/ConiferLabsWA/flan-ul2-alpaca)
 
@@ -44,6 +36,10 @@ If you find any incorrect information or have additional details to add, You can
 - **[PEFT (Parameter-Efficient Fine-Tuning)](https://arxiv.org/abs/2106.04561)**
 
 - **[RAG (Retrieval-Augmented Generation)](https://arxiv.org/abs/2005.11401)**
+
+- **Evaluation**
+
+- **AI/Prompt Security**
 
 
 <br/>
@@ -184,3 +180,30 @@ A recent impactful paper on hybrid retrieval approaches is "On Complementarity O
 
 
 * BIG-Bench : BIG-Bench (Beyond the Imitation Game Benchmark) focuses on tasks that are believed to be beyond the capabilities of current language models, aiming to probe the frontiers of natural language understanding and generation. It includes a wide range of tasks, from ethical reasoning to advanced mathematics, intended to challenge the models in novel ways. BIG-Bench seeks to encourage the development of models that can handle a broader variety of tasks and exhibit more general intelligence.
+
+
+## AI/Prompt Security
+
+### Prompt injection
+
+### Data Leakage
+
+### Inadequate Sandboxing
+
+### Training Data Poisoning
+
+### SSRF Vulnerabilities
+
+### Unathorized Code Execution
+
+### Imporper Error Handling
+
+### Insufficient Access Controls
+
+### Model Inversion
+
+### Overreliance on LLM-generated Content
+
+### Model Stealing
+
+[Privacy-Preserving Prompt Tuning for Large Language Model Services (May, 2023)](https://arxiv.org/abs/2305.06212)

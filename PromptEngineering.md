@@ -41,20 +41,61 @@ Example: "Answer:", "In conclusion..."
 
 ### [SC(Self-Consisitency)](https://arxiv.org/pdf/2203.11171.pdf)
 
-Self-Consistency is a strategy where multiple reasoning paths are generated, and the most consistent answer is selected as the final one. For instance, in solving a calculation problem, various reasoning paths are sampled and generated, with the majority supporting the same result chosen as the final answer. This approach is particularly suitable for reasoning tasks where the answers come from a fixed set, enhancing accuracy through consistency among multiple reasoning processes. <br/>
+Self-Consistency is a strategy where multiple reasoning paths are generated, and the most consistent answer is selected as the final one. For instance, in solving a calculation problem, various reasoning paths are sampled and generated, with the majority supporting the same result chosen as the final answer. This approach is particularly suitable for reasoning tasks where the answers come from a fixed set, enhancing accuracy through consistency among multiple reasoning processes. 
+
+<br/>
 
 ### [CoT(Chain of Thoughts)](https://arxiv.org/pdf/2201.11903.pdf)
 
 Chain of Thoughts is an approach that guides a model to explicitly generate intermediate steps of reasoning during the problem-solving process. For example, instead of merely presenting the final answer to a math problem, the model is encouraged to explain how it arrived at that answer step by step. This helps the model to understand and improve its reasoning capability throughout the process of solving complex problems.
 
+<br/>
+
 ### [Zero-shot CoT](https://arxiv.org/pdf/2205.11916.pdf)
 
 Zero-shot Chain of Thoughts is an approach that allows a model to generate reasoning paths for new problems without prior specific training data. This enables the model to present various answers through randomly generated reasoning paths, among which the most consistent and confident answer is selected. This involves asking the model the same question multiple times with zero-shot prompting, and based on this, the most consistent answer is chosen as the final one.
 
+<br/>
+
 ### [Least-to-Most](https://arxiv.org/pdf/2205.10625.pdf)
 
-The Least-to-Most approach starts with simpler problems and progressively moves to more complex ones. For instance, in solving a complex math problem, it begins with the most basic calculations and gradually progresses to more challenging calculations, with the model explicitly generating reasoning processes at each step. This approach helps the model to break down the problem into smaller units, thereby enhancing its overall understanding of the problem. <br/>
+The Least-to-Most approach starts with simpler problems and progressively moves to more complex ones. For instance, in solving a complex math problem, it begins with the most basic calculations and gradually progresses to more challenging calculations, with the model explicitly generating reasoning processes at each step. This approach helps the model to break down the problem into smaller units, thereby enhancing its overall understanding of the problem.
+
+ <br/>
 
 ### [ReAct(Reasoning-Acting)](https://arxiv.org/pdf/2210.03629.pdf)
 
-ReAct involves deciding on an appropriate action based on the reasoning process. For example, after undergoing a reasoning process to determine what action should be taken in a specific scenario, the model then selects an action based on this reasoning. This approach goes beyond simply generating answers, guiding the model to take specific actions in real-world scenarios or simulations based on its reasoning. <br/>
+ReAct involves deciding on an appropriate action based on the reasoning process. For example, after undergoing a reasoning process to determine what action should be taken in a specific scenario, the model then selects an action based on this reasoning. This approach goes beyond simply generating answers, guiding the model to take specific actions in real-world scenarios or simulations based on its reasoning. 
+
+<br/>
+
+### [Meta-Reasoning over Multiple Chains of Thought](https://arxiv.org/pdf/2304.13007)
+
+The paper focuses on improving multi-hop question answering (QA) systems. It introduces the Multi-Chain Reasoning (MCR) method, which is designed to meta-reason over multiple chains of thought rather than simply aggregating their answers. This approach allows the system to mix information between different reasoning chains and select the most relevant facts to generate a comprehensive explanation and predict the answer.
+
+<br/>
+
+### [Synthetic Prompting](https://arxiv.org/pdf/2302.00618)
+
+The paper introduces a novel method for enhancing the reasoning capabilities of large language models (LLMs) through synthetic prompting. <br/>
+The method uses a few handcrafted examples to prompt the model to generate additional examples by itself, thereby creating effective demonstrations to elicit better reasoning. This involves alternating between a backward process (generating a question that matches a sampled reasoning chain) and a forward process (creating a detailed reasoning chain for that question).
+
+<br/>
+
+### Automatic Prompt Engineer
+
+### Active-Prompt
+
+### Directional Stimulus Prompting
+
+### MRKL
+
+### PAL
+
+### Graph Prompting
+
+### ART
+
+### Self Refine
+
+### Self Evaluation
