@@ -3,30 +3,6 @@
 This repository helps you to personalize your model with the best tips. :blush: <br/>
 If you find any incorrect information or have additional details to add, You can be a contributor by sending PR(Pull Request). <br/>
 
-## Before the start
-
-### Models
-
-- [LLaMA](https://github.com/meta-llama/llama)
-
-- [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama)
-
-- [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
-
-- [Dalai](https://github.com/cocktailpeanut/dalai)
-
-- [Flan-UL2](https://github.com/ConiferLabsWA/flan-ul2-alpaca)
-
-- [nanoGPT](https://github.com/karpathy/nanoGPT)
-
-- [nanoT5](https://github.com/PiotrNawrot/nanoT5)
-
-..
-
-
-<br/>
-
-
 ## Outline
 
 - **Model Alignment**
@@ -102,8 +78,6 @@ Prompt chaining in LLMs involves linking multiple model runs together, where the
 <br/>
 
 ### Tips
-
-- 만약, 한국어로 적용 시에 영어로 번역하여 적용하고, 영어로 나온 결과를 다시 한국어로 번역하여 적용하는 것이 더 좋은 결과를 얻으며 토큰 수(비용) 측면에서 이점이 있습니다. <br/>
 
 - Table : If table's size is small, 'Markdown' is efficient. But, if table's size is large, changing to format is efficient(table -> header detection & make as natural language). So, First, you have to recognize the size of the table. And then, you can choose the format. <br/>
 
@@ -184,26 +158,11 @@ A recent impactful paper on hybrid retrieval approaches is "On Complementarity O
 
 ## AI/Prompt Security
 
-### Prompt injection
+### Malicious Prompts
 
-### Data Leakage
+Malicious prompts are engineered inputs designed to manipulate the behavior of large language models (LLMs) for malicious purposes. These prompts can be crafted to induce biased or harmful outputs from the model, leading to undesirable consequences. Malicious prompts can be used to generate fake news, spread misinformation, or manipulate the model's responses in harmful ways. Moreover, engineered prompts can be leaked, and in some cases, internal data could be stolen.
 
-### Inadequate Sandboxing
+You can see the detailed information about the Malicious Prompt **[here](./MaliciousPrompt.md/)**.  <br/>
 
-### Training Data Poisoning
 
-### SSRF Vulnerabilities
-
-### Unathorized Code Execution
-
-### Imporper Error Handling
-
-### Insufficient Access Controls
-
-### Model Inversion
-
-### Overreliance on LLM-generated Content
-
-### Model Stealing
-
-[Privacy-Preserving Prompt Tuning for Large Language Model Services (May, 2023)](https://arxiv.org/abs/2305.06212)
+### Methods to Prevent
