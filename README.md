@@ -166,3 +166,17 @@ You can see the detailed information about the Malicious Prompt **[here](./Malic
 
 
 ### Methods to Prevent
+
+
+
+
+
+
+
+
+
+
+---
+
+#### Reference:
+[dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)

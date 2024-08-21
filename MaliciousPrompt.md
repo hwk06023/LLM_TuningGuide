@@ -34,3 +34,8 @@ In this process, an attacker or user circumvents the model's constraints to elic
 ## Prompt Injection
 
 Prompt injection is a technique used to insert malicious code or commands into prompts to exploit vulnerabilities in the system. This can lead to unauthorized access, data breaches, or other security risks.
+
+---
+
+#### References:
+[LouisShark/chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt)
